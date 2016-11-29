@@ -52,7 +52,7 @@ app.on('ready', () =>{
         )
     })
     
-    //쿠키값 수정. 크롬에서 구동할 때, 추가 플레이어 팝업이 안나오게 수정. 근데 electron에서 켜지는 지니가 사파리기반인지 크롬기반인지 확인 후 수정할 것..
+    //쿠키값 수정. 크롬에서 구동할 때, 추가 플레이어 팝업이 안나오게 수정. 근데 electron에서 켜지는 지니가 사파리기반인지 크롬기반인지 확인 후 수정할 예정..
     /*
     session.defaultSession.cookies.set({url:'http://www.genie.co.kr/', 
                                             name:'musicPlayer',
@@ -69,7 +69,7 @@ app.on('ready', () =>{
     
     
     mainWindow.webContents.on('new-window',(event, url,disposition,additionalFeatures, options) =>{
-        console.log(options)
+       
         if(disposition == "genie_main" || url == 'http://www.genie.co.kr/player/fPlayer'){
             options.show = false
             setTimeout(function(){mainWindow.reload()},500)

@@ -1,6 +1,6 @@
 # GeniePlayer for MAC
 
-MacOS에서 작동하는 지니 웹플레이어입니다. (OSX 기준) 
+MacOS에서 작동하는 지니 웹플레이어입니다. (OSX 10 기준) 
 
 
 ## 사용법
