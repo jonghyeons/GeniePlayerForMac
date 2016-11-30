@@ -76,14 +76,6 @@ app.on('ready', () =>{
             setTimeout(function(){mainWindow.reload()},500)
         }
     })
-    
-    mainWindow.webContents.on("did-get-redirect-request", (newURL, event) =>{
-     //console.log(url.Url)
-        if(url == "http://www.genie.co.kr"){
-            console.log("메인 이동 확인")
-            mainWindow.loadURL("http://www.genie.co.kr/player/fPlayer")
-        }
-    })
      
 })
 
